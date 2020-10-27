@@ -1,0 +1,49 @@
+/* <!--GLOBAL CSS----------------> */
+h1{
+    background-color: red;
+    color : white;
+}
+h2{
+    background-color: purple;
+    color : white;
+}
+/* Media Query */
+/* type: screen, print , speech, all */
+/* Khi màn hình <1200px chạy đoạn code */
+/* laptop Khai báo kích thước từ lớn tới nhỏ */
+
+/* @media screen and (max-width:1200px) {
+    h1{
+        background-color: yellow;
+    }
+}
+@media screen and (max-width:992px) {
+    h1{
+        background-color:blue;
+    }
+} */
+
+/* Xu hướng responsive 
+desktop : first (max-width)
+mobile : first (min-width)*/
+
+/* Mobile thì khai báo màn hình nhỏ trước , lớn sau */
+@media screen and (min-width:768px){
+    h2{
+        /* Lớn hơn 768 thì vàng */
+        background-color:yellow;
+    }
+}
+@media screen and (min-width:1200px){
+    h2{
+        /* Lớn hơn 1200 thì vàng */
+        background-color:red;
+    }
+}
+@media screen and (min-width:768px) and (max-width:850px){
+    h2{
+        /* Lớn hơn 1200 thì vàng */
+        background-color:pink;
+    }
+}
+
